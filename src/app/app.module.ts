@@ -8,10 +8,13 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Componentes 
 import { AdminComponent } from './pages/admin/admin.component';
+import { AboutComponent } from './shared/about/about.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent
+    AdminComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
