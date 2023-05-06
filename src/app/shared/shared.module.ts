@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CarrucelDestComponent } from './carrucel-dest/carrucel-dest.component';
 import { AboutComponent } from './about/about.component';
 import { BannerCarouselComponent } from './banner-carousel/banner-carousel.component';
+import { FormContactComponent } from './form-contact/form-contact.component';
 
 
 
@@ -10,7 +11,8 @@ import { BannerCarouselComponent } from './banner-carousel/banner-carousel.compo
   declarations: [
     CarrucelDestComponent,
     AboutComponent,
-    BannerCarouselComponent
+    BannerCarouselComponent,
+    FormContactComponent
   ],
   imports: [
     CommonModule
