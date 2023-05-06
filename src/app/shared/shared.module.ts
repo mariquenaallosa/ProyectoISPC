@@ -14,6 +14,12 @@ import { FormContactComponent } from './form-contact/form-contact.component';
     BannerCarouselComponent,
     FormContactComponent
   ],
+  exports:[
+    CarrucelDestComponent,
+    AboutComponent,
+    BannerCarouselComponent,
+    FormContactComponent
+  ],
   imports: [
     CommonModule
   ]
