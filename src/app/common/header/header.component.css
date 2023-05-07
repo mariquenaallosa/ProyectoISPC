@@ -1,3 +1,9 @@
 header {
     background-color: #e00000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo img{
+    width: 200px;
 }
