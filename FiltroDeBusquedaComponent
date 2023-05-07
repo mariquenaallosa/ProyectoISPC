@@ -1,0 +1,62 @@
+import { Component, Output, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-filtro-de-busqueda',
+  templateUrl: './filtro-de-busqueda.component.html',
+  styleUrls: ['./filtro-de-busqueda.component.css']
+})
+export class FiltroDeBusquedaComponent {
+  filtro: string = '';
+
+  @Output() buscar: EventEmitter<string> = new EventEmitter<string>();
+
+  handleFiltroChange(event: Event): void {
+    this.filtro = (<HTMLInputElement>event.target).value;
+  }
+
+  handleBuscarClick(): void {
+    this.buscar.emit(this.filtro);
+  }
+}
+
+<div>
+  <input type="text" [(ngModel)]="filtro" (input)="handleFiltroChange($event)" />
+  <button (click)="handleBuscarClick()">Buscar</button>
+</div>
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+import { FiltroDeBusquedaComponent } from './filtro-de-busqueda/filtro-de-busqueda.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    FiltroDeBusquedaComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  handleBuscar(filtro: string): void {
+    // Lógica de búsqueda
+  }
+}
+
+<app-filtro-de-busqueda (buscar)="handleBuscar($event)"></app-filtro-de-busqueda>
+
