@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 
 
@@ -10,7 +11,8 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AdminComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    GaleriaComponent
   ],
   exports: [
     HomeComponent,
