@@ -3,27 +3,29 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
-import { PagesModule } from './pages/pages.module';
-import { NavComponent } from './common/nav/nav.component';
-import { FooterComponent } from './common/footer/footer.component';
 import { HeaderComponent } from './common/header/header.component';
-
+import { FooterComponent } from './common/footer/footer.component';
+import { NavComponent } from './common/nav/nav.component';
+import { PagesModule } from './pages/pages.module';
+import { SharedModule } from './shared/shared.module';
+import { AdminComponent } from './pages/admin/admin.component';
+import { UsersComponent } from './pages/users/users.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent, 
+    HeaderComponent, 
+    FooterComponent, 
     NavComponent,
-    FooterComponent,
-    HeaderComponent
+    AdminComponent,UsersComponent
   ],
   imports: [
-    AppRoutingModule,
-    BrowserModule,
     CommonModule,
+    BrowserModule,
+    SharedModule,
     PagesModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
-
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
