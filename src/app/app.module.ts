@@ -6,13 +6,15 @@ import { CommonModule } from '@angular/common';
 import { PagesModule } from './pages/pages.module';
 import { NavComponent } from './common/nav/nav.component';
 import { FooterComponent } from './common/footer/footer.component';
+import { HeaderComponent } from './common/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     AppRoutingModule,

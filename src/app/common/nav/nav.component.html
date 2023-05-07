@@ -1,8 +1,29 @@
-<nav>
-    <div class="container">
-      <a href="#">Inicio</a>
-      <a href="#">Acerca de</a>
-      <a href="#">Servicios</a>
-      <a href="#">Contacto</a>
-    </div>
-  </nav>
+<nav class="navbar navbar-light bg-transparent d-flex ">
+  <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="../../../assets/Logo-property.png" alt="Logo-property" >
+      </a>
+  </div>
+  <div class="nav-principal container">
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" onclick="window.location.href='login.html'">Ingresar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" onclick="window.location.href='signup.html'">Registrarse</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Empresa">La empresa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contactos">Contactos</a>
+        </li>
+        <li class="nav-item">
+            <button class="btn-usuarios" onclick="window.location.href='user.html'"><a class="nav-link active">Soy usuario</a></button>
+        </li>
+        <li class="nav-item">
+            <button class="btn-usuarios" onclick="window.location.href='admin.html'"><a class="nav-link active">Soy administrador</a></button>
+        </li>
+    </ul>
+</div>
+</nav>
