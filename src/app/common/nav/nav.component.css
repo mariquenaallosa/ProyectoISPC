@@ -1,24 +1,25 @@
-.navbar-brand img{
-    width: 200px;
+.logo-container{
+    width: 20px;
 }
-.nav-container{
+
+.navbar-container{
+    padding: 20px;
     margin-left: 20px;
 }
 
-.navbar{
-    padding: 20px;
-}
-
-.nav-principal{
+.nav{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
 }
 
-.nav-principal li{
+.nav li{
     list-style: none;
     transition: all 0.4s;
-    z-index: 12;
 }
-.nav-principal li a{
+
+.nav li a{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -29,4 +30,5 @@
 
 .btn-usuarios {
     background-color: #1C4C96;
+    padding:0.7em;
 }
