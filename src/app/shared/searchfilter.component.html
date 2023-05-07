@@ -2,3 +2,5 @@
   <input type="text" [(ngModel)]="filtro" (input)="handleFiltroChange($event)" />
   <button (click)="handleBuscarClick()">Buscar</button>
 </div>
+
+<app-filtro-de-busqueda (buscar)="handleBuscar($event)"></app-filtro-de-busqueda>
