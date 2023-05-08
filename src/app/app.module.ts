@@ -6,10 +6,8 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { NavComponent } from './common/nav/nav.component';
-import { PagesModule } from './pages/pages.module';
-import { SharedModule } from './shared/shared.module';
 import { AdminComponent } from './pages/admin/admin.component';
-import { UsersComponent } from './pages/users/users.component';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -17,12 +15,11 @@ import { UsersComponent } from './pages/users/users.component';
     HeaderComponent, 
     FooterComponent, 
     NavComponent,
-    AdminComponent,UsersComponent
+    AdminComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
-    SharedModule,
     PagesModule
   ],
   providers: [],

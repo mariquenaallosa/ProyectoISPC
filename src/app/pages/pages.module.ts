@@ -5,26 +5,26 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { UsersComponent } from './users/users.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    AdminComponent,
     LoginComponent,
     GaleriaComponent,
     UsersComponent
   ],
   exports: [
     HomeComponent,
-    AdminComponent,
     LoginComponent,
     GaleriaComponent,
     UsersComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class PagesModule { }
