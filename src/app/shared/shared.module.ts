@@ -4,6 +4,7 @@ import { CarrucelDestComponent } from './carrucel-dest/carrucel-dest.component';
 import { AboutComponent } from './about/about.component';
 import { BannerCarouselComponent } from './banner-carousel/banner-carousel.component';
 import { FormContactComponent } from './form-contact/form-contact.component';
+import { BuscadorComponent } from './buscador/buscador.component';
 
 
 
@@ -12,13 +13,15 @@ import { FormContactComponent } from './form-contact/form-contact.component';
     CarrucelDestComponent,
     AboutComponent,
     BannerCarouselComponent,
-    FormContactComponent
+    FormContactComponent,
+    BuscadorComponent
   ],
   exports:[
     CarrucelDestComponent,
     AboutComponent,
     BannerCarouselComponent,
-    FormContactComponent
+    FormContactComponent,
+    BuscadorComponent
   ],
   imports: [
     CommonModule
