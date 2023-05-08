@@ -1,6 +1,7 @@
+
 .carousel {
     position: relative;
-    height: 400px;
+    height: 600px;
 }
   
 .carousel-inner {
@@ -57,4 +58,7 @@
 .carousel-control-next {
     right: 20px;
 }
-  
+
+.container-img {
+ height: 600px;
+}
