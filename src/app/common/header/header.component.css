@@ -1,0 +1,14 @@
+.container-header {
+    background-color: #e00000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo img{
+    width: 200px;
+}
+
+.search {
+    padding: 1.3em;
+    background-color: #1C4C96;
+}
