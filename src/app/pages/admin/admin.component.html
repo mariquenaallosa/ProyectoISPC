@@ -1,37 +1,33 @@
-<div>
+<main>
     <h2>ADMINISTRADOR</h2>
     <div>
-
-        <img src="../View/IMG/admin image.png" alt="IconoMiPerfil" class="perfi">
+        <img src="../../../assets/admin image.png" alt="IconoMiPerfil" class="perfil">
         <p class="admin">Admin: MarcosJimen299</p>
 
         <ul class="nav justify-content-center navegador">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Volver a Inicio</a>
+                <a class="nav-link active" aria-current="page" routerLink="/home">Volver a Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Clientes">Clientes</a>
+                <a class="nav-link">Clientes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Mensajes">Mensajes</a>
+                <a class="nav-link">Mensajes</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Publicar">Publicar</a>
+                <a class="nav-link">Publicar</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Configuracion/editar">Configuracion/editar</a>
+                <a class="nav-link">Configuracion/editar</a>
             </li>
         </ul>
     </div>
-</div>
+</main>
 
 <!-- Clientes GESTOR DE USUARIO -->
 
-<section>
+<section class="cliente">
     <h3>Clientes </h3>
-    <h3 class="Clientes" id="Clientes"> </h3>
-
-    <hr>
     <div class="container bootstrap snippets bootdey">
         <div class="row">
             <div class="col-lg-12">
@@ -168,9 +164,6 @@
 
 <section class="mensajes">
     <h3>Mensajes</h3>
-
-    <h3 class="Mensajes" id="Mensajes"> </h3>
-
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -492,11 +485,7 @@
 
 <section class="publicar">
     <h3>Publicar</h3>
-
-    <h3 class="Publicar" id="Publicar"> </h3>>
-
-    <div class="container mt-3">
-
+    <div>
         <input type="text" class="form-control mt-3" placeholder="ID Propiedad">
         <input type="text" class="form-control mt-3" placeholder="Tipo de Propiedad">
         <input type="text" class="form-control mt-3" placeholder="Tasacion">
@@ -507,12 +496,8 @@
         <input type="text" class="form-control mt-3" placeholder="Superficie">
         <input type="text" class="form-control mt-3" placeholder="Ambientes">
         <input type="text" class="form-control mt-3" placeholder="Estado de Propiedad">
-
         <button type="button" class="btn btn-primary">Publicar</button>
-
-
     </div>
-
 </section>
 
 
@@ -521,10 +506,8 @@
 
 
 <section class="edit">
-
     <h3>Configuracion/editar</h3>
     <div class="config" id="config">
-        <h3 class="Configuracion/editar" id="Configuracion/editar"></h3>
         <div class="container mt-3">
             <input type="text" class="form-control mt-3" placeholder="Check">
             <input type="text" class="form-control mt-3" placeholder="Celular">
@@ -540,46 +523,3 @@
         </div>
     </div>
 </section>
-
-
-<!-- Footer, barra de navegacion -->
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="img-footer"> <img src="../View/IMG/Logo-property.png"> 
-        </div>
-        <div class="ubicacion">
-            <p class="ub-footer">Property inmobiliaria</p>
-            <p class="ub-footer">B° Los arenales- Buenos Aires, Argentina</p>
-        </div>
-
-        <div class="redes-sociales">
-            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> 
-            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a> 
-            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a> 
-            <a href="#" class="google"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-
-        <ul class="nav justify-content-center navegador">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Volver a Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Clientes">Clientes</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#Mensajes">Mensajes</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#Publicar">Publicar</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#Configuracion/editar">Configuracion/editar</a>
-            </li>
-
-        </ul>
-    </div>
-</footer>
