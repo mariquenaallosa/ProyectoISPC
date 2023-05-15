@@ -1,129 +1,90 @@
-h2{
-  background-color: crimson;
-  text-align: center;
-  padding: 20px;
-  color: white;
+#side_nav{
+  background: var(--rojo_property);
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s;
+}
+.content{
+  min-height: 100vh;
+  width: 100%;
+}
+.sidebar li.active{
+  background: #ffffff;
+  border-radius: 8px;
 
 }
-
-.perfi{
-  display: inline-flex;
-  margin-left: auto 5px;
-  float: left;
+.sidebar li.active a, .sidebar li.active a:hover{
+  color: var(--azul_property);
 }
-a { 
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-  text-align: center;
-  background: #1c4c96;
-  border-image: stretch;
-}
-
-header h2 {
-  background-color:#E00000;
-}
-/* NAVEGADOR*/
-
-
-
-.navegador {
-  font-size: 2em;
-  font-family: "open sans " , sans-serif;
-  background-color: rgb(241, 241, 241);
-
-}
-
-
-/* Pagos y Comprobantes*/
-.comprobante {
-  text-align:center;
-  background-color:cornsilk;
-
-  font-style: italic;
-}
-h4{
-  color: #f0f3f5;
-}
-
-.tarjeta {
-  text-align: center;
-  background-color: beige;
-}
-.tarjeta:hover{
-  color: darkolivegreen;
-}
-
-.abonar {
-  text-align: center;
-  background-color: beige;
-}
-
-.cbu {
-  text-align: center;
-  border-radius: 50px;
-  border-style: dotted;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.alias {
- color: black;
-}
-.contra {
-  text-align: left;
-}
-
-
-/* FOOTER */
-
-
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.footer .ub-footer {
-  color: white;
-}
-
-.img-footer img {
-  width: 200px;
-}
-
-.ubicacion h4 {
-  text-transform: uppercase;
-  color: white;
+.sidebar li a{
+  color: #fff;
   font-weight: bold;
-  text-align: center;
 }
 
-.footer {
-  grid-area: footer;
-  background-color: #e00000;
+.navbar__header{
+  background: var(--azul_property);
+}
+.navbar-toggler.btn-user{
+  background: #fff;
+  font-size: 1rem;
+  padding: 5px;
+  margin-left: 5px;
 }
 
-.Ayuda{
-  background-color:rgba( 221, 160 , 221 ,  0.7 )
+.dropdown-menu.menu-show{
+  font-size: 12px;
+  margin-left: 2px;
+  transition: all 0.3s;
 }
 
-.preaviso{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*--user avatar---*/
+
+.user-avatar{
+  max-width: 35px;
 }
-.arreglos{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+/*cards presentación*/
+
+.stat{
+  border-right: 0.5px solid rgb(202, 202, 202);
 }
-.cardimg{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-  border-radius: 50%;
+.row-card{
+  margin: 0 auto;
+}
+
+/*---content---*/
+.content__user{
+  color: #ffffff;
+}
+
+
+/*-------------*/
+#btn-pagar{
+  background-color: var(--azul_property);
+  padding: 8px 25px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+
+
+@media(max-width:767px){
+  
+  #side_nav{
+    margin-left: -250px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  #side_nav.active{
+    margin-left: 0;
+  }
+  .sidebar-logo h6{
+    font-size: 1.2rem;
+  }
+  .btn-pagar{
+      margin: 6px;
+  }
+  
 }

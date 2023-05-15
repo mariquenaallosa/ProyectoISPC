@@ -1,145 +1,323 @@
 
-<header>
-  <h2 class="micuenta"> Mi Cuenta </h2> 
-        
-        
-  <div > <img src="/src/assets/Mi Cuenta Icono.png" alt="IconoMiPerfil" class="perfi" > <br>
-    <h4 class="contra">Numero de Contrato: 425819/9</h4> </div>
-        
-  <br>
-      
-</header> 
-<br>
+<div class="main-container d-flex bg-white">
+  <div class="sidebar" id="side_nav"> 
+      <div class="header-box  px-2 pt-3 pb-4 d-flex align-content-center justify-content-between">
+          <div class="sidebar-logo">
+              <img class="img-fluid w-75" src="assets/Logo-property.png" alt="logo">
+              <h6 class="fs-5 text-white">Te damos la bienvenida!</h6>
+          </div> 
+          <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="bi bi-filter-right"></i></button>
+      </div>
 
-    <!--############ NAVEGADOR MI CUENTA  ##############--> 
+      <ul class="list-unstyled px-2">
+          <li class="p-2 active"><a href="#tablero" class="text-decoration-none d-block"><i class="bi bi-grid-3x3-gap">  Tablero</i></a></li>
+          <li class="p-2"><a href="#NuevosPagos" class="text-decoration-none d-block"><i class="bi bi-wallet2">  Nuevas</i></a></li>
+          <li class="p-2"><a href="#comprobantes" class="text-decoration-none d-block"><i class="bi bi-file-earmark-pdf">  Pagos y Comprobantes</i></a></li>
+          <li class="p-2"><a href="#contactos" class="text-decoration-none d-block"><i class="bi bi-person-lines-fill">  Contactos</i></a></li>
+      </ul>
+  </div>
+  <div class="content">
+    <nav class="navbar navbar__header navbar-expand-lg navbar-light border-bottom ">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between d-md-none">
+                <a class="navbar-brand fs-4" href="#"><h5 class="text-white">Property</h5></a>
+                <div class=" d-block">
+                    <button class="btn px-1 py-0 open-btn w-50 text-white" ><i class="bi bi-filter-left"></i></button>
+                </div>  
+            </div>      
+        </div>
+        <div>
+        <button class="navbar-toggler btn-user" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  menu-ul">
+                    <li class="nav-item dropdown">
+                        <a class="content__user nav-link dropdown-toggle " href="#" id="navbarDropdown user" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="mr-2 user-avatar" src="assets/Mi Cuenta Icono.png" alt="">
+                            <div class="content__user d-inline">
+                                User: 425819/9
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu menu-show" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Perfil</a></li>
+                          <li><a class="dropdown-item" href="#">Configuración</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>           
+      </nav>
 
-
-    
-<ul class="nav justify-content-center navegador">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="./index.html">Volver a Inicio</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#pagos"> Pagos y Comprobantes</a>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" href="#ayuda">Ayuda y PreAvisos</a>
-  </li>
-</ul>
-  
-<br><br>
-
-<!-- PAGO MEDIANTE TRANFERENCIA  -->
-
-<img src="/src/assets/card.png" alt="###" class="cardimg"> <hr>
-
-      
-<h3 class="tarjeta" id="pagos">  Pagar Mendiante Transferencia :  </h3>    
-
-<p class="abonar"> Ud podra abonar el Alquiler, Expensas y Servicios  a la siguiente cuenta</p> <br>
-
-<div class="cbu">  <h3> CBU/CVU: 1878659678954413</h3>
-    <h4 class="alias"> ALIAS: POPERTY.PAGOS.SOL</h4>
-    <h4 class="alias"> Beneficiario: Marcos Jimenez Sosa</h4>
-    
-
-</div><br>
-<br>
-<br><br> 
-
-<!-- COMPROBANTES-->
-
-
-<img src="/src/assets/check.png" alt="imggg" class="cardimg">
-        
-<div class="comprobante"> <hr> <h3>Cargar Comprobante </h3> 
-  <p>Haz Click a Seleccionar archivo para cargar tu comprobante de pago:</p>
-  <div class="mb-15">
-   <label for="formFile" class="form-label"> </label>
-   <input class="form-control archive" type="file" id="formFile"> <br>
-   <input class ="btn btn-primary" type="submit" value="Enviar" > <br><br>
-  </div> 
-  <hr> 
-</div>   
-  
-<br><br>
-<br>
-<!--MENSAJERO AYUDA Y PREAVISOS -->
-<div class="Ayuda">
-
-  <img src="../View/IMG/mantenimiento.webp" alt="#" class="arreglos">
-  <h3 class="h1-responsive font-weight-bold text-center my-4" id="ayuda">Ayuda y PreAvisos</h3>
-
-  <p class="text-center w-responsive mx-auto mb-5">Escribi el detalle de tu Inconveniente actual con el inmbuele y nos contactaremos a la brevedad.</p>
-  <div class="row preaviso">
-  
-        
-    <div class="col-md-9 mb-md-0 mb-5">
-        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-           
-          <div class="row">
-            <div class="col-md-6">
-                <div class="md-form mb-0">
-                    <input type="text" id="name" name="name" class="form-control">
-                    <label for="name" class="">Nombre y Apellido</label>
+      <section class="shadow-sm p-3 mb-5 bg-body rounded" id="tablero">
+        <div class="container m-2">
+            <div class="my-5 text-light text-black">
+                <h1 class="mb-0">Te damos la Bienvenida</h1>
+            </div>
+            <div class="card p-4 border rounded-0">
+                
+                
+                <div class="card-body">
+                    <div class="row row-card">
+                        <!--col 1-->
+                        <div class="col-12 col-lg-3 stat my-3">
+                            <div class="mx-auto">
+                                <h6 class="text-muted">Revisa tu última información</h6>
+                                <p><img class="img-fluid w-50" src="assets/done-img.svg" alt=""></p>
+                                <h6 class="text-light-emphasis">Toda la información a tu alcance</h6>
+                            </div>
+                        </div>
+                        <!--col 2-->
+                        <div class="col-12 col-lg-3 stat my-3">
+                            <div class="mx-auto">
+                                <h6 class="text-muted">Gestiona Pagos</h6>
+                                <p><img class="img-fluid w-50" src="assets/pay-img.svg" alt=""></p>
+                                <h6 class="text-light-emphasis">Paga alquileres, expensas y servicios</h6>
+                            </div> 
+                        </div>
+                        <!--col 3-->
+                        <div class="col-12 col-lg-3 stat my-3">
+                            <div class="mx-auto">
+                                <h6 class="text-muted">Descarga comprobantes</h6>
+                                <p><img class="img-fluid w-50 p-1" src="assets/download-img.svg" alt=""></p>
+                                <h6 class="text-light-emphasis">Disponibles en cualquier momento</h6>
+                            </div>
+                        </div>
+                        <!--col 4-->
+                        <div class="col-12 col-lg-3 my-3">
+                            <div class="mx-auto">
+                                <h6 class="text-muted">Sesión de pagos realizados</h6>
+                                <p><img class="img-fluid w-50" src="assets/confirmacion-img.svg" alt=""></p>
+                                <h6 class="text-light-emphasis">Registro de pagos anteriores</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="col-md-6">
-              <div class="md-form mb-0 ">
-                  <input type="text" id="email" name="email" class="form-control">
-                  <label for="email" class="">Tu email</label>
+        </div>
+    </section >
+
+    <section class="shadow-none mb-5 bg-body rounded" id="NuevosPagos">
+      <div class="container-fluid">
+          <div class="mx-4 my-5 text-success">
+              <h3 class="font-weigth-bold mb-0">Nuevas actualizaciones</h3>
+          </div>
+          <div class="row ">
+              <!--1ra columna-->
+              <div class="col-12 col-lg-6">
+                  <!--card 1-->
+                  <div class="card">
+                      <h5 class="card-header bg-success bg-opacity-70" id="alquileres">Alquiler</h5>
+                      <div class="card-body bg-light-subtle">
+                      <h5 class="card-title">Alquiler Mayo 2023</h5>
+                      <div class="navbar-nav ml-auto">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Detalles</a>
+                              <div class="nav-item">
+                                  <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                                      <li>Monto a pagar: $65.000
+                                          
+                                      </li>
+                                      <li>
+                                          Cargo por servicio: 10%
+                                      </li> 
+                                  </ul>
+                              </div>
+                          </div>
+                      <a href="#" class="btn btn-outline-warning">Pagar</a>
+                      </div>
+                  </div>
               </div>
-            </div>
+              <!--2da columna-->
+              <div class="col-sm-12 col-lg-6 mt-">
+                  <!--card 2-->
+                  <div class="card">
+                      <h5 class="card-header bg-warning bg-opacity-60" id="expensas">Expensas</h5>
+                      <div class="card-body bg-light-subtle">
+                      <h5 class="card-title">Expensas Mayo 2023</h5>
+                      <div class="navbar-nav ml-auto">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Detalles</a>
+                              <div class="nav-item">
+                                  <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                                      <li>Monto a pagar: $15.000
+                                          
+                                      </li>
+                                      <li>
+                                          No adeuda.
+                                      </li> 
+                                  </ul>
+                              </div>
+                          </div>
+                      <a href="#" class="btn btn-outline-warning" >Pagar</a>
+                      </div>
+                  </div>
+              </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
-                <div class="md-form mb-0">
-                  <input type="text" id="subject" name="subject" class="form-control">
-                  <label for="subject" class="">Asunto</label>
-                </div>
-            </div>
-          </div>
-          <div class="row">   
-            <div class="col-md-12">
-
-              <div class="md-form">
-                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                <label for="message">Tu Mensaje</label>
+              <!--1 columna-->
+              <div class="col-sm-12 col-lg-4">
+                  <!--servicio1-->
+                  <div class="card mt-5">
+                      <h5 class="card-header bg-primary-subtle bg-opacity-70" id="servicios">Servicios</h5>
+                      <div class="card-body bg-light-subtle">
+                      <h5 class="card-title">Servicio de luz Mayo 2023</h5>
+                      <div class="navbar-nav ml-auto">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Detalles</a>
+                              <div class="nav-item">
+                                  <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                                      <li>Monto a pagar: $3.000
+                                          
+                                      </li>
+                                      <li>
+                                          Periodo 02/23|04/23
+                                      </li> 
+                                  </ul>
+                              </div>
+                          </div>
+                      <a href="#" class="btn btn-outline-warning">Pagar</a>
+                      </div>
+                  </div>
               </div>
+              <!--2 columna-->
+              <div class="col-sm-12 col-lg-4">
+                  <!--servicios 2-->
+                  <div class="card mt-5">
+                      <h5 class="card-header bg-primary-subtle bg-opacity-70" id="servicios">Servicios</h5>   
+                      <div class="card-body bg-light-subtle">
+                          <h5 class="card-title">Servicio de agua Mayo 2023</h5>
+                          <div class="navbar-nav ml-auto">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Detalles</a>
+                              <div class="nav-item">
+                                  <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                                      <li>Monto a pagar: $2.500
+                                          
+                                      </li>
+                                      <li>
+                                          Periodo 02/23|04/23
+                                      </li> 
+                                  </ul>
+                              </div>
+                          </div>
+                          <a href="#" class="btn btn-outline-warning">Pagar</a>
+                      </div>
+                  </div>
+              </div>
+              <!--3 columna-->
+              <div class="col-sm-12 col-lg-4">
+                  <!--servicios 3-->
+                  <div class="card mt-5">
+                      <h5 class="card-header bg-primary-subtle bg-opacity-70" id="servicios">Servicios</h5>
+                      <div class="card-body bg-light-subtle">
+                          <h5 class="card-title">Servicio de gas Mayo 2023</h5>
+                          <div class="navbar-nav ml-auto">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Detalles</a>
+                              <div class="nav-item">
+                                  <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                                      <li>Monto a pagar: $5.000
+                                          
+                                      </li>
+                                      <li>
+                                          Periodo 02/23|04/23
+                                      </li> 
+                                  </ul>
+                              </div>
+                          </div>
+                          <a href="#" class="btn btn-outline-warning">Pagar</a>
+                      </div>
 
-            </div>
-          </div>
-        </form>
-        <div class="text-center text-md-left">
-          <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
-        </div>
-        <div class="status">
-        </div>
-    </div>
+                  </div>
+          
+              </div>  
+          </div>     
+                  
+        </div><!--final container-->
+    </section> 
     
-  </div>
-</div> 
+    
+    <section class="shadow-sm mb-5 bg-body rounded" id="comprobantes">
+      <div class="container">
+          <div class="my-5 mx-4 text-light text-black">
+              <h4 class="mb-0 text-danger">Pagos realizados</h4>
+          </div>
+          <div class="card">
+              <div class="card-body">
+                  <div class="table-responsive-sm">
+                      <table class="table caption-top">
+                          <caption>Periodo 2023</caption>
+                          <thead>
+                            <tr>
+                              <th scope="col">Operación</th>
+                              <th scope="col">Servicio</th>
+                              <th scope="col">Comprobante</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Alquiler</th>
+                              <td>Abril 2023</td>
+                              <td><a class="btn btn-outline-success" href="">Descargar Comprobante</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Expensas</th>
+                              <td>Abril 2023</td>
+                              <td><a class="btn btn-outline-success" href="">Descargar Comprobante</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Aguas Cordobezas</th>
+                              <td>02/23|04/23</td>
+                              <td><a class="btn btn-outline-success" href="">Descargar Comprobante</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Epec</th>
+                              <td>02/23|04/23</td>
+                              <td><a class="btn btn-outline-success" href="">Descargar Comprobante</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Ecogas</th>
+                              <td>02/23|04/23</td>
+                              <td><a class="btn btn-outline-success" href="">Descargar Comprobante</a></td>
+                            </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+            </div>
+        </div>
 
+    </section>
 
-<!--######## FOOOTER ################-->
-<footer class="footer">
-  <div class="footer-container">
-      <div class="img-footer"> <img src="../View/IMG/Logo-property.png"> 
+    <section class="p-3 shadow-sm mb-5 bg-body rounded" id="contactos">
+      <div class="my-5 mx-4 text-center">
+          <h5 class="mb-0 text-primary">Contacta con tu Propietario</h5>
       </div>
-      <div class="ubicacion">
-          <h4>Encontranos en:</h4>
-          <p class="ub-footer">Buenos Aires 1273 Planta alta-</p>
-          <p class="ub-footer">B° Los arenales- Buenos Aires, Argentina</p>
+      <div class="container-fluid d-flex justify-content-center">
+          
+          <div class="card " style="width: 30rem;">
+              <div class="card-body">
+                  <div class="row g-3">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="First name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Nº identificación" aria-label="N identificación">
+                      </div>
+                      <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px;"></textarea>
+                          <label for="floatingTextarea"> Deje su mensaje.</label>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="Tel-contacto"> <a href="Tel:+54 xxx-xxxxxx"><i class="fa-solid fa-phone"></i>(+54) 11-465387 </a>
-      </div>
-      <div class="redes-sociales"> <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> 
-        <a href="#"class="youtube"><i class="fab fa-youtube"></i></a> 
-        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a> 
-        <a href="#" class="google"><i class="fab fa-linkedin-in"></i></a>
-      </div>
+
+    </section>
+  
+  
+  
   </div>
-</footer>
+  
+</div>
+
           
