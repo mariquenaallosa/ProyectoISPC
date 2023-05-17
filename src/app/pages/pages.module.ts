@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { UsersComponent } from './users/users.component';
 import { SharedModule } from '../shared/shared.module';
+import { Pagina404Component } from './pagina404/pagina404.component';
 
 
 
@@ -14,7 +15,8 @@ import { SharedModule } from '../shared/shared.module';
     HomeComponent,
     LoginComponent,
     GaleriaComponent,
-    UsersComponent
+    UsersComponent,
+    Pagina404Component
   ],
   exports: [
     HomeComponent,

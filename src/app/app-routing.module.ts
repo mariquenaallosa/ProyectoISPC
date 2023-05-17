@@ -4,8 +4,11 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { UsersComponent } from './pages/users/users.component';
+import { Pagina404Component } from './pages/pagina404/pagina404.component';
 
+//Rutas de navegacion
 const routes: Routes = [
+  {path: '**', component: Pagina404Component}
   {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'admin', component: AdminComponent},
