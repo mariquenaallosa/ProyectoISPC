@@ -8,7 +8,7 @@ import { Pagina404Component } from './pages/pagina404/pagina404.component';
 
 //Rutas de navegacion
 const routes: Routes = [
-  {path: '**', component: Pagina404Component}
+  {path: '**', component: Pagina404Component},
   {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'admin', component: AdminComponent},
