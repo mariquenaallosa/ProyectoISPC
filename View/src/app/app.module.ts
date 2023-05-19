@@ -19,7 +19,8 @@ import { AdminComponent } from './pages/admin/admin.component';
   imports: [
     CommonModule,
     BrowserModule,
-    PagesModule
+    PagesModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
