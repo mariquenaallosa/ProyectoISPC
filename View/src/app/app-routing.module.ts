@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'users', component: UsersComponent},
-  {path: '**', component: Pagina404Component},
+  //{path: '**', component: Pagina404Component},
   {path: '', redirectTo: '/home', pathMatch: 'full' }, // Ruta por defecto
 ];
 
