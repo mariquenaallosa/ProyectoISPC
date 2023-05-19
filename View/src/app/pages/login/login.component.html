@@ -1,25 +1,75 @@
-<h2>Inicio de sesión</h2>
-<div class="container">
-    <h1 class="text-center">Iniciar Sesión</h1>
-    <form class="justify-content-center needs-validation" novalidate>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Dirección de E-mail</label>
-            <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" required>
-            <div class="invalid-feedback"></div>
-            <div id="emailHelp" class="form-text">Nunca compartiremos tus datos con nadie.</div>
-            <div class="invalid-feedback">Debes ingresar un e-mail con formato válido</div>
+<section id="body">
+    <div id="logo">
+        <!-- Logo -->
+        <a routerLink="home" class="logo">
+            <img src="../../../assets/Logo-property.png" alt="logo el anzuelo">
+        </a>
+    </div>
+    <div class="container-login">
+        <!-- Form -->
+        <section class="login">
+            <div class="container">
+                <div class="row full-height justify-content-center">
+                    <div class="col-12 text-center align-self-center py-3">
+                        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                            <div class="card-3d-wrap mx-auto">
+                                <div class="card-3d-wrapper">
+                                    <div class="card-front">
+                                        <div class="center-wrap">
+    
+                                            <form id="loginForm" class="section text-center needs-validation" novalidate>
+                                                <h4 class="mb-4 pb-3">Inicio de sesion</h4>
+                                                <div class="form-group">
+                                                    <input type="email" name="logemail" id="email"
+                                                        class="form-style form-check-input form-control" placeholder="Email"
+                                                        id="logemail" minlength="14" maxlength="30" required>
+                                                    <i class="input-icon bi bi-person-circle"></i>
+                                                    <div class="aviso"></div>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input type="password" name="logpass"
+                                                        class="form-style form-check-input form-control"
+                                                        placeholder="Contraseña" id="password" minlength="8" maxlength="12"
+                                                        required>
+                                                    <i class="input-icon bi bi-key"></i>
+                                                    <div class="aviso"></div>
+    
+                                                </div>
+                                                <a href="../index.html"><button id="btn-login" class="btn mt-4"
+                                                        type="submit"><span>Ingresar</span></button></a>
+                                                <p class="mb-0 mt-4 text-center"><a href="./reset-password.html"
+                                                        class="link">¿Olvidaste tu
+                                                        constraseña?</a></p>
+                                                <p class="mb-0 mt-0 text-center"><a href="./registro.html"
+                                                        class="link">Registrate</a></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Waves Container-->
+    
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" ) />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="input-password" minlength="5" required>
-        </div>
-        <div class="mb-5 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Recordar Contraseña</label>
-        </div>
-        <div class="container text-center">
-            <button type="submit" class="btn btn-primary">Entrar</button>
-        </div>
-    </form>
-    <div id="envio-exito" class="ocultar">Bienvenido de nuevo <strong id="email-usuario"></strong>! En instantes serás redirigido a tu perfil...</div>
-</div>
+           
+        <!--Waves end-->
+    </div>
+</section>
+<!--Login ends-->
