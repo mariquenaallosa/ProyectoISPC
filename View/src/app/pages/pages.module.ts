@@ -26,6 +26,7 @@ import { RegistroComponent } from './registro/registro.component';
     GaleriaComponent,
     UsersComponent,
     RegistroComponent
+
   ],
   imports: [
     CommonModule,
