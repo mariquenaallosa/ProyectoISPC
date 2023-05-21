@@ -7,6 +7,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { UsersComponent } from './users/users.component';
 import { SharedModule } from '../shared/shared.module';
 import { Pagina404Component } from './pagina404/pagina404.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 
@@ -16,13 +17,15 @@ import { Pagina404Component } from './pagina404/pagina404.component';
     LoginComponent,
     GaleriaComponent,
     UsersComponent,
-    Pagina404Component
+    Pagina404Component,
+    RegistroComponent
   ],
   exports: [
     HomeComponent,
     LoginComponent,
     GaleriaComponent,
-    UsersComponent
+    UsersComponent,
+    RegistroComponent
   ],
   imports: [
     CommonModule,
