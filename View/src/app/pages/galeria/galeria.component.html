@@ -1,19 +1,7 @@
-<!-- Header -->
-  <header>
-    <h1>Property</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Propiedades</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  
 <div class="form">
         <div class="col-lg-4 col-md-6 col-sm-12 col-12 busqueda-categoria-col">
         <div class="busqueda-categoria">
-          <h2 class="item-borde-top subtitle-text">Estoy Buscando</h2>
+          <h2>Estoy Buscando</h2>
           <div class="row align-items-center opciones-busqueda">
 
             <div class="col-lg-4 col-md-4 col-sm-4 col-4">
@@ -31,7 +19,7 @@
             <div class="col-lg-8 col-md-8 col-sm-8 col-8">
               <div class="form-group">
                 <div id="lista" style="display:block"> 				   
-                <select name="operacion" class="form-control form-control-sm" onchange="ajax2(this.value)"><option value="0">Todas</option><option value="02">Alquiler</option><option value="01">Alquiler de Temporada</option><option value="03">Venta</option></select> 
+                <select name="operacion" class="form-control form-control-sm" ><option value="0">Todas</option><option value="02">Alquiler</option><option value="01">Alquiler de Temporada</option><option value="03">Venta</option></select> 
                 </div>
               </div>
             </div>
@@ -43,7 +31,7 @@
               <div class="form-group">
 
                 <div id="lista2" style="display:block"> 				  
-                <select name="zona" class="form-control form-control-sm" onchange="ajax3(this.value)"><option value="0">Todas</option><option value="10">25 de Mayo</option><option value="18">9 de Julio</option><option value="01">Albardon</option><option value="11">Angaco</option><option value="12">Calingasta</option><option value="13">Capital</option><option value="14">Caucete</option><option value="15">Chimbas</option><option value="21">Fuera de San Juan</option><option value="16">Iglesia</option><option value="17">Jachal</option><option value="02">Pocito</option><option value="03">Rawson</option><option value="04">Rivadavia</option><option value="05">San Martin</option><option value="06">Santa Lucia</option><option value="07">Sarmiento</option><option value="08">Ullum</option><option value="09">Valle Fertil</option><option value="20">Zonda</option></select>                      </div>
+                <select name="zona" class="form-control form-control-sm"><option value="0">Todas</option><option value="10">25 de Mayo</option><option value="18">9 de Julio</option><option value="01">Albardon</option><option value="11">Angaco</option><option value="12">Calingasta</option><option value="13">Capital</option><option value="14">Caucete</option><option value="15">Chimbas</option><option value="21">Fuera de San Juan</option><option value="16">Iglesia</option><option value="17">Jachal</option><option value="02">Pocito</option><option value="03">Rawson</option><option value="04">Rivadavia</option><option value="05">San Martin</option><option value="06">Santa Lucia</option><option value="07">Sarmiento</option><option value="08">Ullum</option><option value="09">Valle Fertil</option><option value="20">Zonda</option></select>                      </div>
               </div>
             </div>
 
@@ -146,10 +134,10 @@
     </div>
 
     <!--Division-->
-    <div class="row">
+    <div class="row mx-4">
         <!-- Gallery item -->
         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="img/Deptonew.jpeg" alt="" class="img-fluid card-img-top">
+          <div class="bg-white rounded shadow-sm"><img src="../../../assets/Deptonew.jpeg" alt="" class="img-fluid card-img-top">
             <div class="p-4">
               <h5> <a href="#" class="text-dark">Oroño 2642</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -164,7 +152,7 @@
   
         <!-- Gallery item -->
         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="img/departamentos-2.jpg" alt="" class="img-fluid card-img-top">
+          <div class="bg-white rounded shadow-sm"><img src="../../../assets/departamentos-2.jpg" alt="" class="img-fluid card-img-top">
             <div class="p-4">
               <h5> <a href="#" class="text-dark">Balcarce 120</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -179,7 +167,7 @@
   
         <!-- Gallery item -->
         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="img/deptonew1.jpg" alt="" class="img-fluid card-img-top">
+          <div class="bg-white rounded shadow-sm"><img src="../../../assets/deptonew1.jpg" alt="" class="img-fluid card-img-top">
             <div class="p-4">
               <h5> <a href="#" class="text-dark">Catamarca 3000</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -194,12 +182,12 @@
   
         <!-- Gallery item -->
         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="img/departamentos-4.jpg" alt="" class="img-fluid card-img-top">
+          <div class="bg-white rounded shadow-sm"><img src="../../../assets/departamentos-4.jpg" alt="" class="img-fluid card-img-top">
             <div class="p-4">
               <h5> <a href="#" class="text-dark">San Lorenzo 500</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+              <div class="d-flex  align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small badge badge-success  px-3 rounded-pill mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
                 <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
               </div>
             </div>
@@ -209,7 +197,7 @@
   
         <!-- Gallery item -->
         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="img/departamento-5.jpg" alt="" class="img-fluid card-img-top">
+          <div class="bg-white rounded shadow-sm"><img src="../../../assets/Departamento-6.jpg" alt="" class="img-fluid card-img-top">
             <div class="p-4">
               <h5> <a href="#" class="text-dark">San Luis 900</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -224,7 +212,7 @@
   
         <!-- Gallery item -->
         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="img/Departamento-6.jpg" alt="" class="img-fluid card-img-top">
+          <div class="bg-white rounded shadow-sm"><img src="../../../assets/departamento-5.jpg" alt="" class="img-fluid card-img-top">
             <div class="p-4">
               <h5> <a href="#" class="text-dark">Cafferata 750</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -239,7 +227,21 @@
   
         <!-- Gallery item -->
         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="img/deptonew2.jpg" alt="" class="img-fluid card-img-top">
+          <div class="bg-white rounded shadow-sm"><img src="../../../assets/deptonew2.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Colon 320</a></h5>
+              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                <div class="badge badge-info px-3 rounded-pill font-weight-normal">Hot</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+        <!-- Gallery item -->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="../../../assets/deptonew2.jpg" alt="" class="img-fluid card-img-top">
             <div class="p-4">
               <h5> <a href="#" class="text-dark">Colon 320</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -252,9 +254,3 @@
         </div>
         <!-- End -->
   
-  <!-- Footer -->
-  <footer>
-    <p>Derechos de Autor &copy; 2023 - Property</p>
-  </footer>
-
-    
