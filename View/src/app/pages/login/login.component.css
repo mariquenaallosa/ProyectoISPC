@@ -3,14 +3,12 @@ section {
     font-size: 15px;
     line-height: 1.7;
     color: #fff;
-    background: linear-gradient(60deg, rgb(183, 58, 58) 0%, rgb(193, 0, 0) 100%);
     overflow: hidden;
   }
   
   .container-login {
     position: relative;
     text-align: center;
-    background: linear-gradient(60deg, rgb(183, 58, 58) 0%, rgb(193, 0, 0) 100%);
   }
   
   a {
@@ -28,12 +26,13 @@ section {
   }
   
   .link:hover {
-    color: #0075ff;
+    color: #1C4C96;
   }
   
   h4 {
-    font-weight: 600;
-    color: #0075ff;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #1C4C96;
   }
   
   h6 span {
@@ -72,15 +71,15 @@ section {
   .card-front{
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #fff;
     background-image: url('../../../assets/login-back.svg');
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: 300%;
     position: absolute;
-    border-radius: 6px;
     left: 0;
     top: 0;
+    box-shadow: 8px 8px 28px 2px rgba(0, 0, 0, 0.1);
   }
   
   .center-wrap {
@@ -108,7 +107,6 @@ section {
     height: 48px;
     width: 100%;
     font-weight: 500;
-    border-radius: 4px;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.5px;
@@ -135,7 +133,7 @@ section {
     font-size: 24px;
     line-height: 48px;
     text-align: left;
-    color: #0075ff;
+    color: #1C4C96;
     transition: all 200ms linear;
   }
   
@@ -248,9 +246,8 @@ section {
     font-weight: 700;
     font-size: .75rem;
     text-transform: uppercase;
-    border-radius: 500px;
     overflow: hidden;
-    background-color:#102770 ;
+    background-color:#1C4C96 ;
     color: #fff;
    }
    
@@ -261,7 +258,7 @@ section {
    }
    
   .btn:hover span {
-    color: #102770;
+    color: #1C4C96;
    }
    
   .btn::before, .btn::after {
@@ -275,7 +272,7 @@ section {
   
   .btn::before {
     content: "";
-    background:#0075ff ;
+    background:#1C4C96 ;
     width: 120%;
     left: -10%;
     transform: skew(30deg);
@@ -286,91 +283,14 @@ section {
     transform: translate3d(100%, 0, 0);
    } 
   .btn:hover{
-    background-color: #96bdd1;
+    background-color: #bbd4fa;
+    color:#1C4C96;
   }
-  
-  
-  .logo {
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    display: block;
-    z-index: 100;
-    filter: invert();
-  }
-  
-  .logo img {
-    height: 9rem;
-    width: auto;
-    display: block;
-  }
-  
-  .waves {
-    position: relative;
-    width: 100%;
-    height: 25vh;
-    margin-bottom: -7px;
-    min-height: 100px;
-    max-height: 250px;
-  }
-  
-  
-  /* Animation */
-  
-  .parallax>use {
-    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-  }
-  
-  .parallax>use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
-  }
-  
-  .parallax>use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-  }
-  
-  .parallax>use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-  }
-  
-  .parallax>use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-  }
-  
-  @keyframes move-forever {
-    0% {
-      transform: translate3d(-90px, 0, 0);
-    }
-  
-    100% {
-      transform: translate3d(85px, 0, 0);
-    }
-  }
-  
   
   
   
   @media (max-width: 576px) {
-    .logo {
-      position: absolute;
-      top: 10px;
-      left: 15%;    
-      display: block;
-      z-index: 100;
-      filter: invert();
-    }
     
-    .logo img {
-      min-height: 4rem;
-      max-height: 6rem;
-      width: auto;
-      display: block;
-    }
-  
     .center-wrap {
       position: absolute;
       width: 100%;
@@ -392,15 +312,7 @@ section {
     
    }
    @media (min-width: 576px) and (max-width: 768px) {
-    .logo {
-      position: absolute;
-      top: 5px;
-      left: 25%;    
-      display: block;
-      z-index: 100;
-      filter: invert();
-    }
-
+    
     .center-wrap {
       position: absolute;
       width: 100%;
