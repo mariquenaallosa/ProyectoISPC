@@ -1,1 +1,67 @@
-<p>registro works!</p>
+<div class="container-registro">
+    <!-- Form -->
+    <section class="section resgistro">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-12 text-center align-self-center py-3">
+                    <div class="section pb-3 pt-3 pt-sm-4 text-center">
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="center-wrap pt-3 pb-3">
+                                        <!-- form -->
+                                        <form class="section text-center" id="formRegistro" novalidate>
+                                            <h4 class="mb-4 pb-3">Resgistrarse</h4>
+                                            <div class="form-group form-control">
+                                                <input type="text" name="sign-name" class="form-style "
+                                                    placeholder="Nombre" id="sign-name" minlength="3" maxlength="60"
+                                                    required>
+                                                <i id="iconName" class="input-icon bi-person-circle"></i>
+                                                <div class="aviso"></div>
+                                            </div>
+                                            <div class="form-group  form-control mt-2">
+                                                <input type="text" name="sign-apellido" class="form-style"
+                                                    placeholder="Apellido" id="sign-apellido" minlength="3"
+                                                    maxlength="60" required>
+                                                <i class="input-icon bi-person-circle"></i>
+                                                <div class="aviso"></div>
+
+                                            </div>
+                                            <div class="form-group  form-control mt-2">
+                                                <input type="email" name="sign-mail" id="sign-mail"
+                                                    class="form-style" placeholder="Email" id="sign-mail"
+                                                    minlength="10" maxlength="60" required>
+                                                <i class="input-icon bi-envelope"></i>
+                                                <div class="aviso"></div>
+                                            </div>
+                                            <div class="form-group  form-control mt-2">
+                                                <input type="password" name="sign-pass" class="form-style"
+                                                    placeholder="Contraseña" id="sign-pass" autocomplete="off"
+                                                    minlength="8" maxlength="12" required>
+                                                <i class="input-icon bi bi-key"></i>
+                                                <div class="aviso"></div>
+                                            </div>
+                                            <div class="form-group  form-control mt-2">
+                                                <input type="password" name="sign-pass2" class="form-style"
+                                                    placeholder="Repetir contraseña" id="sign-pass2"
+                                                    autocomplete="off" minlength="8" maxlength="12" required>
+                                                <i class="input-icon bi bi-key"></i>
+                                                <div class="aviso"></div>
+                                            </div>
+                                            <a routerLink="/login" aria-current="page" >
+                                                <button id="btnRegistro" class="mt-4 btn" type="submit" ><span>Registrarse</span></button> </a>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!--Login ends-->
