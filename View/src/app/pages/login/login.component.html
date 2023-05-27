@@ -10,22 +10,31 @@
                                     <div class="card-front">
                                         <div class="center-wrap">
     
-                                            <form id="loginForm" class="section text-center needs-validation" novalidate>
+                                            <form [formGroup]="formLogin" id="loginForm" class="section text-center needs-validation" novalidate>
                                                 <h4 class="mb-4 pb-3">Inicio de sesion</h4>
                                                 <div class="form-group">
-                                                    <input type="email" name="logemail" id="email"
+                                                    <input formControlName="email" type="email" name="logemail" id="email"
                                                         class="form-style form-check-input form-control" placeholder="Email"
                                                         id="logemail" minlength="14" maxlength="30" required>
                                                     <i class="input-icon bi bi-person-circle"></i>
-                                                    <div class="aviso"></div>
+                                                    <div class="alert alert-danger mt-2" [hidden]="email.valid || email.pristine ">
+                                                        <span *ngIf="email.errors?.['required']">
+                                                            El Email es obligatorio
+                                                        </span> 
+                                                        <span *ngIf="email.errors?.['email']">
+                                                            El Email debe ser válido
+                                                        </span>
+                                                    </div>
                                                 </div>
                                                 <div class="form-group mt-2">
-                                                    <input type="password" name="logpass"
+                                                    <input formControlName="password" type="password" name="logpass"
                                                         class="form-style form-check-input form-control"
                                                         placeholder="Contraseña" id="password" minlength="8" maxlength="12"
                                                         required>
                                                     <i class="input-icon bi bi-key"></i>
-                                                    <div class="aviso"></div>
+                                                    <div class= "alert alert-danger mt-2" [hidden]="password.valid || password.pristine">
+                                                        La contraseña es obligatoria
+                                                    </div>
     
                                                 </div>
                                                 <a><button id="btn-login" class="btn mt-4"
