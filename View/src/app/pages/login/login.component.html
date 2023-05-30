@@ -9,34 +9,40 @@
                                 <div class="card-3d-wrapper">
                                     <div class="card-front">
                                         <div class="center-wrap">
-    
-                                            <form [formGroup]="formLogin" id="loginForm" class="section text-center needs-validation" novalidate>
+
+                                            <form  id="loginForm" class="section text-center needs-validation" novalidate>
                                                 <h4 class="mb-4 pb-3">Inicio de sesion</h4>
+
+                                                <!-- --------------email--------------------------- -->
                                                 <div class="form-group">
-                                                    <input formControlName="email" type="email" name="logemail" id="email"
-                                                        class="form-style form-check-input form-control" placeholder="Email"
-                                                        id="logemail" minlength="14" maxlength="30" required>
+                                                    <input formControlName="email" type="email" [formControl]="email" class="form-style form-check-input form-control" placeholder="Email" >
+
                                                     <i class="input-icon bi bi-person-circle"></i>
-                                                    <div class="alert alert-danger mt-2" [hidden]="email.valid || email.pristine ">
-                                                        <span *ngIf="email.errors?.['required']">
-                                                            El Email es obligatorio
-                                                        </span> 
-                                                        <span *ngIf="email.errors?.['email']">
-                                                            El Email debe ser válido
-                                                        </span>
+                                                    <div class="alert alert-white mt-2" [hidden]="email.valid || email.pristine ">
+                                                        <p *ngIf="email.errors?.['required']" class="text-danger">
+                                                            El Email es requerido
+                                                        </p>
+                                                        <p *ngIf="email.errors?.['email']" class="text-danger">
+                                                            El formado del email debe ser válido
+                                                        </p>
                                                     </div>
                                                 </div>
+
+                                                <!-- ----------password------------------------------ -->
+
                                                 <div class="form-group mt-2">
-                                                    <input formControlName="password" type="password" name="logpass"
-                                                        class="form-style form-check-input form-control"
-                                                        placeholder="Contraseña" id="password" minlength="8" maxlength="12"
-                                                        required>
+                                                    <input formControlName="password" type="password" [formControl]="password"  class="form-style form-check-input form-control" placeholder="Contraseña">
+
                                                     <i class="input-icon bi bi-key"></i>
-                                                    <div class= "alert alert-danger mt-2" [hidden]="password.valid || password.pristine">
-                                                        La contraseña es obligatoria
+                                                     <div class="alert alert-white mt-2" [hidden]="password.valid || password.pristine" class="text-danger">
+
+                                                      <p *ngIf="password.errors?.['required']" class="text-danger">
+                                                        El password es requerido
+                                                      </p>
                                                     </div>
-    
+
                                                 </div>
+                                                <!-- ----------------------------------------------- -->
                                                 <a><button id="btn-login" class="btn mt-4"
                                                         type="submit"><span>Ingresar</span></button></a>
                                                 <!-- <p class="mb-0 mt-3 text-center"><a routerLink="registro" aria-current="page" class="link">Registrate</a></p> -->
