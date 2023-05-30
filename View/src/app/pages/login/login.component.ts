@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent {
     password: ['', Validators.required],
   })
 
-  constructor(private formBuilder:FormBuilder){
+  constructor(private formBuilder:FormBuilder, private router:Router){
     
   }
 
@@ -28,7 +29,7 @@ export class LoginComponent {
   login(){
     if(this.formLogin.valid){
       console.log('llamar al servicio de login')
-      /*this.router.navigateByUrl(),*/
+      this.router.navigateByUrl('/users'),
       this.formLogin.reset()
     }
     else{
