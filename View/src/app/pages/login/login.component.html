@@ -10,7 +10,7 @@
                                     <div class="card-front">
                                         <div class="center-wrap">
 
-                                            <form  id="loginForm" class="section text-center needs-validation" novalidate>
+                                            <form [formGroup]="formLogin" id="loginForm" class="section text-center needs-validation" novalidate>
                                                 <h4 class="mb-4 pb-3">Inicio de sesion</h4>
 
                                                 <!-- --------------email--------------------------- -->
@@ -18,13 +18,13 @@
                                                     <input formControlName="email" type="email" [formControl]="email" class="form-style form-check-input form-control" placeholder="Email" >
 
                                                     <i class="input-icon bi bi-person-circle"></i>
-                                                    <div class="alert alert-white mt-2" [hidden]="email.valid || email.pristine ">
-                                                        <p *ngIf="email.errors?.['required']" class="text-danger">
-                                                            El Email es requerido
-                                                        </p>
-                                                        <p *ngIf="email.errors?.['email']" class="text-danger">
-                                                            El formado del email debe ser válido
-                                                        </p>
+                                                    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger mt-2">
+                                                        <div *ngIf="email.errors?.['required']">
+                                                            El email es obligatorio.
+                                                        </div> 
+                                                        <div *ngIf="email.errors?.['email']">
+                                                            El email debe ser válido.
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -34,16 +34,14 @@
                                                     <input formControlName="password" type="password" [formControl]="password"  class="form-style form-check-input form-control" placeholder="Contraseña">
 
                                                     <i class="input-icon bi bi-key"></i>
-                                                     <div class="alert alert-white mt-2" [hidden]="password.valid || password.pristine" class="text-danger">
-
-                                                      <p *ngIf="password.errors?.['required']" class="text-danger">
-                                                        El password es requerido
-                                                      </p>
+                                                    <div *ngIf="password.invalid && (password.dirty || password.touched)" class= "text-danger  mt-2">
+                                                        <div *ngIf="password.errors?.['required']">
+                                                            La contraseña es obligatoria.
+                                                        </div> 
                                                     </div>
-
                                                 </div>
                                                 <!-- ----------------------------------------------- -->
-                                                <a><button id="btn-login" class="btn mt-4"
+                                                <a><button (click)="login()" id="btn-login" class="btn mt-4"
                                                         type="submit"><span>Ingresar</span></button></a>
                                                 <!-- <p class="mb-0 mt-3 text-center"><a routerLink="registro" aria-current="page" class="link">Registrate</a></p> -->
                                             </form>
