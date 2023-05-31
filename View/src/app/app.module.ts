@@ -9,6 +9,7 @@ import { NavComponent } from './common/nav/nav.component';
 import { PagesModule } from './pages/pages.module';
 import { AdminComponent } from './pages/admin/admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     PagesModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
   ],
