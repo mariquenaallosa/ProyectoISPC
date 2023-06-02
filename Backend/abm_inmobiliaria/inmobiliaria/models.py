@@ -22,7 +22,7 @@ class Servicio(models.Model):
     direccion = models.TextField(max_length=100, blank=False)
     precio = models.DecimalField(max_length=100,max_digits=10,blank=False, decimal_places=2)
     id_Categoria = models.ForeignKey(Categoria, to_field="id_Categoria" ,on_delete=models.CASCADE)
-    class Meta:
+    class Meta:  
         db_table = "Servicio"
         verbose_name = "servicios a realizar"
         verbose_name_plural = "servicios"
