@@ -21,9 +21,6 @@
   font-weight: bold;
 }
 
-.navbar__header{
-  background: var(--azul_property);
-}
 .navbar-toggler.btn-user{
   background: #fff;
   font-size: 1rem;
@@ -53,7 +50,7 @@
 
 /*---content---*/
 .content__user{
-  color: #ffffff;
+  color: #000000;
 }
 
 
