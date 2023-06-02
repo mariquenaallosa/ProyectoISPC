@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl, FormControl } from '@angular/forms';
 import { passwordMatch } from './validatorsPass';
 import { Router } from '@angular/router';
+import { RegistroService } from '../services/auth/registro.service';
+import { RegistroRequest } from '../services/auth/registroRequest';
 
 @Component({
   selector: 'app-registro',
@@ -22,11 +24,22 @@ export class RegistroComponent {
     return this.formRegistro.get(name)
   }
 
-  constructor(private router: Router){
+  constructor(private router: Router, private registroService: RegistroService){
 
   }
   registerFn(){
     if(this.formRegistro.valid){
+      this.registroService.registro(this.formRegistro.value as RegistroRequest).subscribe({
+        next: (userRegistroData) => {
+          console.log(userRegistroData);
+        },
+        error: (errorRegistroData) => {
+          console.error(errorRegistroData);
+        },
+        complete: () =>{
+          console.info("el registro está completo")
+        }
+      }),
       this.router.navigateByUrl('/users'),
       this.formRegistro.reset()
     }

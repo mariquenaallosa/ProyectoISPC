@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+import { LoginService } from '../services/auth/login.service';
+import { LoginRequest } from '../services/auth/loginRequest';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +16,7 @@ export class LoginComponent {
     password: ['', Validators.required],
   })
 
-  constructor(private formBuilder:FormBuilder, private router:Router){
+  constructor(private formBuilder:FormBuilder, private router:Router, private loginService: LoginService){
     
   }
 
@@ -28,7 +30,17 @@ export class LoginComponent {
 
   login(){
     if(this.formLogin.valid){
-      console.log('llamar al servicio de login')
+      this.loginService.login(this.formLogin.value as LoginRequest).subscribe({
+        next: (userData) => {
+          console.log(userData);
+        },
+        error: (errorData) => {
+          console.error(errorData);
+        },
+        complete: () =>{
+          console.info("el login está completo")
+        }
+      }),
       this.router.navigateByUrl('/users'),
       this.formLogin.reset()
     }
