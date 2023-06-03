@@ -11,6 +11,8 @@ import { RegistroRequest } from '../services/auth/registroRequest';
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent {
+
+  registroError:string='';
   formRegistro = new FormGroup({
     nombre : new FormControl("", [Validators.required, Validators.maxLength(32)]),
     apellido : new FormControl("", [Validators.required, Validators.maxLength(32)]),
@@ -35,13 +37,15 @@ export class RegistroComponent {
         },
         error: (errorRegistroData) => {
           console.error(errorRegistroData);
+          this.registroError=errorRegistroData;
         },
         complete: () =>{
-          console.info("el registro está completo")
+          console.info("el registro está completo");
+          this.router.navigateByUrl('/users');
+          this.formRegistro.reset();
         }
-      }),
-      this.router.navigateByUrl('/users'),
-      this.formRegistro.reset()
+      })
+      
     }
     else{
       this.formRegistro.markAllAsTouched()

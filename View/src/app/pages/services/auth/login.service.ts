@@ -12,7 +12,7 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   login(credentials:LoginRequest):Observable<User>{
-    return this.http.get<User>('./assets/dataa.json').pipe(
+    return this.http.get<User>('./assets/data.json').pipe(
       catchError(this.handleError)
     );
   }
