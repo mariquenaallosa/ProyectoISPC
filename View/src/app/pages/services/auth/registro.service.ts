@@ -12,7 +12,7 @@ export class RegistroService {
   constructor(private http: HttpClient) { }
 
   registro(credentials:RegistroRequest):Observable<UserRegistro>{
-    return this.http.get<UserRegistro>('./assets/dataa.json').pipe(
+    return this.http.get<UserRegistro>('./assets/data.json').pipe(
       catchError(this.handleError)
     );
   }
