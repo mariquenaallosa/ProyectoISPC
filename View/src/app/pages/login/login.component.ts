@@ -11,6 +11,9 @@ import { LoginRequest } from '../services/auth/loginRequest';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+
+  loginError:string='';
+
   formLogin=this.formBuilder.group({
     email: ['', [Validators.required, Validators.email]],
     password: ['', Validators.required],
@@ -36,13 +39,15 @@ export class LoginComponent {
         },
         error: (errorData) => {
           console.error(errorData);
+          this.loginError=errorData;
         },
         complete: () =>{
-          console.info("el login está completo")
+          console.info("el login está completo");
+          this.router.navigateByUrl('/users');
+          this.formLogin.reset();
         }
-      }),
-      this.router.navigateByUrl('/users'),
-      this.formLogin.reset()
+      })
+      
     }
     else{
       this.formLogin.markAllAsTouched()
