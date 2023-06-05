@@ -18,3 +18,54 @@
     font-weight: 600;
     border: none;
 }
+
+@media screen and (max-width: 320px){
+  #h3{
+    font-size: 20px;
+  }
+  .campo-select{
+    width: 95%;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 375px){
+    #h3{
+        font-size: 20px;
+      }
+      .campo-select{
+        width: 95%;
+        height: 40px;
+      }
+}
+@media screen and (max-width: 425px){
+    #h3{
+        font-size: 18px;
+      }
+      .campo-select{
+        width: 95%;
+        height: 40px;
+      }
+}
+@media screen and (max-width: 768px){
+    #h3{
+        font-size: 10px;
+      }
+      .buscador select {
+        margin-bottom: 1.5em;
+        padding: 1.2em 1em;
+        font-size: 0.5em;
+    }
+    .btn-filter {
+        padding: 0.5em;
+        background: #1C4C96;
+        color: #fff;
+        font-weight: 600;
+        font-size:0.5em;
+        border: none;
+        height: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}

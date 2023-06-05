@@ -47,3 +47,79 @@ button:hover {
     font-weight: bold;
     text-align: center;
 }
+.enviar{
+    overflow: hidden;
+    
+}
+@media screen and (max-width: 320px){
+    .text-dest {
+        padding: 1em;
+        background: #1C4C96;
+    }
+    .text-dest h2 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+    }
+    button{
+        width: 300px;
+    }
+    input, textarea{
+        width: 300px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .text-dest {
+        padding: 1em;
+        background: #1C4C96;
+    }
+    .text-dest h2 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+    }
+    button{
+        width: 300px;
+    }
+    input, textarea{
+        width: 300px;
+    }
+
+
+}
+@media screen and (max-width: 425px){
+    .text-dest {
+        padding: 1em;
+        background: #1C4C96;
+    }
+    .text-dest h2 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+    }
+    button{
+        width: 300px;
+    }
+    input, textarea{
+        width: 300px;
+    }
+
+
+}
+@media screen and (max-width: 768px){
+    button{
+        width: 300px;
+    }
+    input, textarea{
+        width: 300px;
+    }
+
+
+}

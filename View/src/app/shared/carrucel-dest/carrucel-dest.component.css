@@ -8,3 +8,124 @@
     font-weight: bold;
     text-align: center;
 }
+
+@media screen and (max-width: 320px){
+    .text-dest {
+        padding: 1em;
+        background: #1C4C96;
+    }
+    .text-dest h2 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+    }
+    .carousel-inner{
+        height: 350px;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #carouselExampleSlidesOnly{
+        height: 350px;
+        width: 95%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+    .carousel-item{
+        height: 350px;
+       
+    }
+    img{
+        height: 350px;
+        
+    }
+
+}
+@media screen and (max-width: 375px){
+    .text-dest {
+        padding: 1em;
+        background: #1C4C96;
+    }
+    .text-dest h2 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+    }
+    .carousel-inner{
+        height: 350px;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #carouselExampleSlidesOnly{
+        height: 350px;
+        width: 95%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+    .carousel-item{
+        height: 350px;
+       
+    }
+    img{
+        height: 350px;
+        
+    }
+
+}
+@media screen and (max-width: 425px){
+    .text-dest {
+        padding: 1em;
+        background: #1C4C96;
+    }
+    .text-dest h2 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+    }
+    .carousel-inner{
+        height: 350px;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #carouselExampleSlidesOnly{
+        height: 350px;
+        width: 95%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+    .carousel-item{
+        height: 350px;
+       
+    }
+    img{
+        height: 350px;
+        
+    }
+
+}
+@media screen and (max-width: 768px){
+    .text-dest {
+        padding: 1em;
+        background: #1C4C96;
+    }
+    .text-dest h2 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+    }
+   
+
+}

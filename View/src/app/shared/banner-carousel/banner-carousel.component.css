@@ -62,3 +62,46 @@
 .container-img {
  height: 600px;
 }
+
+@media screen and (max-width: 320px){
+    .carousel {
+        position: relative;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .container-img {
+        height: 250px;
+       }
+
+}
+@media screen and (max-width: 375px){
+    .carousel {
+        position: relative;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .container-img {
+        height: 250px;
+       }
+
+}
+@media screen and (max-width: 425px){
+    .carousel {
+        position: relative;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .container-img {
+        height: 250px;
+       }
+}
+@media screen and (max-width: 768px){
+    .carousel {
+        position: relative;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .container-img {
+        height: 250px;
+       }
+}

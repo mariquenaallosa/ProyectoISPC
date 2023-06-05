@@ -1,0 +1,24 @@
+@media screen and (max-width: 320px){
+    #buscador-carrousel-div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 375px){
+    #buscador-carrousel-div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 425px){
+    #buscador-carrousel-div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px){
+    #buscador-carrousel-div{
+        display: flex;
+        flex-direction: column;
+    }
+}
