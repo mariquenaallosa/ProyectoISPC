@@ -1,6 +1,11 @@
 from django.contrib import admin
 from .models import Categoria, Cliente, Administrador, Clientes_admin, Propiedades, Comprobante_Pago, Operacion, Mensajes, Servicio
+from django.contrib.auth import get_user_model
+from django.contrib.auth.admin import UserAdmin
 
+@admin.register(get_user_model())
+class CustomUserAdmin(UserAdmin):
+    pass
 
 
 # tablas bd
