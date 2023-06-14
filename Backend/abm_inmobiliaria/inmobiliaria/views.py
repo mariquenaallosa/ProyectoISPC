@@ -6,6 +6,13 @@ from rest_framework.views import APIView
 from rest_framework.permissions import  AllowAny
 from .serializers  import UserSerializer
 
+from rest_framework import viewsets###
+from .serializers import ClienteSerializer ###
+from .serializers import PropiedadesSerializer ###
+
+from .models import Cliente###
+from .models import Propiedades###
+
 
 
 class LoginView(APIView):
@@ -33,3 +40,14 @@ class LogoutView(APIView):
     def post(self, request):
         # Borramos de la request la información de sesión
         logout(request)
+
+### Cliente
+class ClienteViewset(viewsets.ModelViewSet): ##
+    queryset=Cliente.objects.all()   ###
+    serializer_class=ClienteSerializer
+
+ ## Propiedades
+
+class PropiedadesViewset(viewsets.ModelViewSet): ##
+    queryset=Propiedades.objects.all()   ###
+    serializer_class=PropiedadesSerializer

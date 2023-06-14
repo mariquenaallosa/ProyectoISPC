@@ -18,6 +18,8 @@ class CategoriaAdmin(admin.ModelAdmin):
 class ServicioAdmin(admin.ModelAdmin):
     list_display= ("nombre", "descripcion","direccion", "precio","id_Categoria")
 
+
+
 admin.site.register(Cliente, Cliente_admin)
 admin.site.register(Propiedades, Propiedades_admin)
 admin.site.register(Operacion, Operacion_admin)
