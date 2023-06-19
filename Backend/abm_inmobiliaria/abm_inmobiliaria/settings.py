@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -21,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-gpsl*(6c!fu8(9)#k&-qwj=d=2j*y(s6)s@v2c47bp1liqn^dl'
+SECRET_KEY = 'django-insecure-26-qj_f2@d64qj*_n6xu#83e_m1b726xzfwm65m0x_9v_-7#bw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,8 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'inmobiliaria',
-    'rest_framework',
-    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -51,12 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
 ]
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost',
-]
+
 ROOT_URLCONF = 'abm_inmobiliaria.urls'
 
 TEMPLATES = [
@@ -81,17 +74,21 @@ WSGI_APPLICATION = 'abm_inmobiliaria.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME':'abm_inmobiliaria',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}
 
+DATABASES = {
+
+'default': {
+'ENGINE': 'django.db.backends.mysql',
+'NAME': 'abm_inmobiliaria',
+'USER': 'root',
+'PASSWORD': '',
+'HOST': 'localhost',
+'PORT': '33065',
+'OPTIONS': {
+'sql_mode': 'traditional',
+}
+}
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -133,5 +130,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-

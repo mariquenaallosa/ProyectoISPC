@@ -26,4 +26,3 @@ admin.site.register(Operacion, Operacion_admin)
 admin.site.register(Comprobante_Pago,Comprobante_admin)
 admin.site.register(Categoria, CategoriaAdmin)
 admin.site.register(Servicio,ServicioAdmin)
-
