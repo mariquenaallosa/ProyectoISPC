@@ -2,19 +2,11 @@ footer {
   background-color: #e00000;
   padding: 0.6em;
   font-weight: 600;
-}
-.footer-container{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.footer .ub-footer{
   color: white;
-
 }
-.img-footer img {
-    width: 200px;
 
+.img-footer img {
+    width: 120px;
 }
 
 .redes-sociales{

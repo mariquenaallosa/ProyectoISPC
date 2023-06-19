@@ -1,17 +1,5 @@
-.logo-container{
-    width: 20px;
-}
-
-.navbar-container{
-    padding: 20px;
-    margin-left: 20px;
-}
-
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
+.logo img{
+    width: 120px;
 }
 
 .nav li{
@@ -24,11 +12,17 @@
     text-transform: uppercase;
     color: white;
     font-weight: bold;
-    text-align: center;
-
 }
 
 .btn-usuarios {
     background-color: #1C4C96;
     padding:0.7em;
+    width: 140px;
+    margin-bottom: 4px;
+    margin-right: 4px;
 }
+
+nav{
+    background-color: #E00000;
+}
+

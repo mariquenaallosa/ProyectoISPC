@@ -8,6 +8,7 @@ import { UsersComponent } from './users/users.component';
 import { SharedModule } from '../shared/shared.module';
 import { Pagina404Component } from './pagina404/pagina404.component';
 import { RegistroComponent } from './registro/registro.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -30,7 +31,9 @@ import { RegistroComponent } from './registro/registro.component';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class PagesModule { }

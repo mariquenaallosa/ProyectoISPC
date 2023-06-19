@@ -8,6 +8,8 @@ import { FooterComponent } from './common/footer/footer.component';
 import { NavComponent } from './common/nav/nav.component';
 import { PagesModule } from './pages/pages.module';
 import { AdminComponent } from './pages/admin/admin.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,10 @@ import { AdminComponent } from './pages/admin/admin.component';
     CommonModule,
     BrowserModule,
     PagesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
