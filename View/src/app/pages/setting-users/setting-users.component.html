@@ -1,0 +1,146 @@
+<div class="main-container d-flex bg-white">
+    <div class="sidebar" id="side_nav"> 
+        <div class="header-box  px-2 pt-3 pb-4 d-flex align-content-center justify-content-between">
+            <div class="sidebar-logo">
+                <img class="img-fluid w-75" src="assets/Logo-property.png" alt="logo">
+            </div> 
+            <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="bi bi-filter-right"></i></button>
+
+        </div>
+
+        <ul class="list-unstyled px-2">
+            <li class="p-2 active"><a href="#" class="text-decoration-none d-block"><i class="bi bi-arrow-left-circle-fill">  Volver</i></a></li>
+            
+        </ul>
+    </div>
+    <div class="content bg-content">
+        <nav class="navbar navbar__header navbar-expand-lg navbar-light border-bottom ">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between d-md-none">
+                    <a class="navbar-brand fs-4" href="#"><h5 class="text-white">Property</h5></a>
+                    <div class=" d-block">
+                        <button class="btn px-1 py-0 open-btn w-50 text-white" ><i class="bi bi-filter-left"></i></button>
+                    </div>  
+                </div>      
+            </div>
+            <div>
+            <button class="navbar-toggler btn-user" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  menu-ul">
+                        <li class="nav-item dropdown">
+                            <a class="content__user nav-link dropdown-toggle " href="#" id="navbarDropdown user" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="mr-2 user-avatar" src="assets/Logo-property" alt="">
+                                <div class="content__user d-inline">
+                                    User: 425819/9
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu menu-show" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Perfil</a></li>
+                              <li><a class="dropdown-item" href="#">Configuración</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                </div>
+            </div>           
+        </nav>
+        <section class="shadow-sm p-3 mb-5 rounded bg-white">
+            <div class="container m-2">
+                <div class="my-5 text-body-emphasis">
+                    <h2 class="mb-0 text-light-emphasis fst-italic">Configuración</h2>
+                    <h6 class="text-muted text-light-emphasis">Actualiza tus datos</h6>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8  offset-md-2">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Datos usuario</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Actualizar contraseña</button>
+                            </li>
+                            
+                        </ul>
+                        <div class="tab-content bg-white p-4 border" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img class="img-fluid" src="assets/Mi Cuenta Icono.png" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="form-group row">
+                                            <label for="nombre" class="col-4">Nro. de cliente:</label>
+                                            <div class="col-8">
+                                                <input class="form-control" type="number" value="4258199">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="nombre" class="col-4">Nombre:</label>
+                                            <div class="col-8">
+                                                <input class="form-control" type="text" value="Usuario 1">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="nombre" class="col-4">Email:</label>
+                                            <div class="col-8">
+                                                <input class="form-control" type="email" value="user1@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="nombre" class="col-4">Teléfono:</label>
+                                            <div class="col-8">
+                                                <input class="form-control" type="text" value="(+54) 351-xxxxxxx">
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-2 text-center">
+                                            <button class="btn btn-danger">Actualizar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6 offset-md-2">
+                                        <h4 class="mb-4 text-center">Cambio de clave:</h4>
+                                        <div class="form-group row">
+                                            <label for="nombre" class="col-6">Nro. Cliente:</label>
+                                            <div class="col-6">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="contraseña" class="col-6">Contraseña actual:</label>
+                                            <div class="col-6">
+                                                <input class="form-control" type="password">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="ncontraseña" class="col-6">Nueva contraseña:</label>
+                                            <div class="col-6">
+                                                <input class="form-control" type="password">
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-2 text-center">
+                                            <button class="btn btn-primary">Actualizar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+

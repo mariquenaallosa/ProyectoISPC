@@ -9,6 +9,8 @@ import { SharedModule } from '../shared/shared.module';
 import { Pagina404Component } from './pagina404/pagina404.component';
 import { RegistroComponent } from './registro/registro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PerfilUserComponent } from './perfil-user/perfil-user.component';
+import { SettingUsersComponent } from './setting-users/setting-users.component';
 
 
 
@@ -19,7 +21,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     GaleriaComponent,
     UsersComponent,
     Pagina404Component,
-    RegistroComponent
+    RegistroComponent,
+    PerfilUserComponent,
+    SettingUsersComponent
   ],
   exports: [
     HomeComponent,

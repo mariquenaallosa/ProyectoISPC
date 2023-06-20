@@ -8,6 +8,8 @@ import { Pagina404Component } from './pages/pagina404/pagina404.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { AboutComponent } from './shared/about/about.component';
 import { GaleriaComponent } from './pages/galeria/galeria.component';
+import { PerfilUserComponent } from './pages/perfil-user/perfil-user.component';
+import { SettingUsersComponent } from './pages/setting-users/setting-users.component';
 
 //Rutas de navegacion
 const routes: Routes = [
@@ -17,6 +19,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'users', component: UsersComponent},
+  {path: 'perfil', component: PerfilUserComponent},
+  {path: 'configuracion', component: SettingUsersComponent},
   {path: 'registro', component: RegistroComponent},
   {path: 'propiedades',  component:GaleriaComponent},
   //{path: '**', component: Pagina404Component},
