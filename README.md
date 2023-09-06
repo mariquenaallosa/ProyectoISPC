@@ -17,3 +17,7 @@
 # MVP VIDEO DEMO
 
 https://drive.google.com/file/d/1uKVjD2LJ7lZZ0j-U5LAOj5cN5zNBSwQT/view?usp=sharing
+
+### ✨ Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=mariquenaallosa/ProyectoISPC)](https://github.com/mariquenaallosa/ProyectoISPC/graphs/contributors)
